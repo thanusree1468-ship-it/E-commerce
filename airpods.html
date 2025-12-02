@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><title>product</title>
+            <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+     <header>
+        <div id="user-display"></div>
+        <h1>🛍️ MyShop</h1>
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="mobile.html">Mobile</a>
+        <a href="laptop.html">Laptop</a>
+        <a href="airpods.html">Airpods</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="pods.png" alt="airpods 1">
+            <h3>Airpods 1</h3>
+            <p>$100</p>
+            <button onclick="addToCart('Airpods 1',100)" >add to cart</button>
+        </div>
+         <div class="product">
+            <img src="pods.png" alt="airpods">
+            <h3>Airpods 2</h3>
+            <p>$400</p>
+            <button onclick="addToCart('Airpods 2',1200)" >add to cart</button>
+            
+        </div>
+         <div class="product">
+            <img src="pods.png" alt="airpods3">
+            <h3>Airpods 3</h3>
+            <p>$200</p>
+            <button onclick="addToCart('Airpods 3',90)" >add to cart</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>© 2025 MyShop. All Rights Reserved.</p>
+    </footer>
+     <script>
+        let user = localStorage.getItem("loginUser");
+
+        if (user){
+            document.getElementById("user-display").innerText = "Welcome, " + user;
+         }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="user-display"></div>
+        <h1>🛍️ MyShop</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="mobile.html">Mobile</a>
+            <a href="laptop.html">Laptop</a>
+            <a href="airpods.html">Airpods</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h2>Welcome to MyShop!</h2>
+        <p>Find the best deals on top products</p>
+       
+        <a href="mobile.html" class="btn">Shop Me</a>
+    </section>
+
+    <section class="highlights">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✔️High Quality Product</li>
+            <li>✔️Best Price Guarentee</li>
+            <li>✔️Fast & Secure Delivery</li>
+            <li>✔️24/7 Customer Support</li>
+            <li>✔️Easy Returns & Refunds</li>
+        </ul>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 MyShop. All Rights Reserved.</p>
+    </footer>
+    <script>
+        let user = localStorage.getItem("loginUser");
+
+        if (user){
+            document.getElementById("user-display").innerText = "Welcome, " + user;
+         }
+    </script>
+
+</body>
+</html>
